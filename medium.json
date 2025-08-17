@@ -1,0 +1,92 @@
+[
+	{
+		"question": "What is 24 * 3",
+		"answer_list": [
+			"68",
+			"74",
+			"70"
+		],
+		"correct_answer": "72"
+	},
+	{
+		"question": "A bakery makes 15 batches of cookies, with each batch containing 8 cookies. How many cookies are made in total?",
+		"answer_list": [
+			"110",
+			"130",
+			"115"
+		],
+		"correct_answer": "120"
+	},
+	{
+		"question": "What is 96 / 4",
+		"answer_list": [
+			"22",
+			"26",
+			"23"
+		],
+		"correct_answer": "24"
+	},
+	{
+		"question": "What is 53 + 29",
+		"answer_list": [
+			"80",
+			"84",
+			"78"
+		],
+		"correct_answer": "82"
+	},
+	{
+		"question": "What is 75 - 19",
+		"answer_list": [
+			"54",
+			"58",
+			"52"
+		],
+		"correct_answer": "56"
+	},
+	{
+		"question": "A school organizes a field trip where 3 buses are needed, and each bus carries 42 students. How many students are going on the trip?",
+		"answer_list": [
+			"124",
+			"120",
+			"130"
+		],
+		"correct_answer": "126"
+	},
+	{
+		"question": "What is 17 * 5",
+		"answer_list": [
+			"80",
+			"90",
+			"83"
+		],
+		"correct_answer": "85"
+	},
+	{
+		"question": "What is 88 - 37",
+		"answer_list": [
+			"49",
+			"53",
+			"47"
+		],
+		"correct_answer": "51"
+	},
+	{
+		"question": "What is 144 / 6",
+		"answer_list": [
+			"22",
+			"26",
+			"23"
+		],
+		"correct_answer": "24"
+	},
+	{
+		"question": "What is 64 + 28",
+		"answer_list": [
+			"90",
+			"94",
+			"89"
+		],
+		"correct_answer": "92"
+	}
+]
