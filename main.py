@@ -4,6 +4,7 @@ from quiz import Give_Quiz
 
 def Main_FUNC():
     while True:
+        print("Welcome to the Math Quiz!")
         print("Choose Easy, Medium, or Hard by typing the letter for the difficulty")
         print("Type 'exit' to exit anytime")
 

@@ -59,5 +59,3 @@ def Give_Quiz(difficulty):
     for d in table:
         print(f"{d[0]}          {d[1]}     {d[2]:.0f}s")
     print(f"Total Score: {score}")
-    if Restart_The_Quiz():
-        return
