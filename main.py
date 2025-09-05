@@ -1,6 +1,5 @@
 import json
 import random 
-from readjson import readjsonfile
 from quiz import quiz
 
 def main():
@@ -9,20 +8,8 @@ def main():
 
     #get difficulty
     difficulty= input("Easy(e),Medium(m),Hard(h): ")
-
-    file = ""
-    if difficulty == "e":
-        file = "./easy.json"
-    elif difficulty == "m":
-        file = "./medium.json"
-    elif difficulty == "h":
-        file = "./hard.json"
-    else:
-        print("Invalid input quitting now")
-        exit()
     try:
-        quiz_data = readjsonfile(file)
-        quiz(quiz_data)
+        quiz(difficulty)
     except Exception as e:
         print(e)
         exit()
