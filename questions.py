@@ -1,5 +1,6 @@
 import random as r # this will allow for the use of r.randint rather than random.randint
 
+#function to create the question
 def create_question(min_val,max_val):
     int_1 = r.randint(min_val,max_val) 
     int_2 = r.randint(min_val,max_val)
@@ -8,17 +9,13 @@ def create_question(min_val,max_val):
     return question
 
 
-
+#function to select the operation
 def select_operation():
-    randnum = r.randint(1,4)
+    randnum = r.randint(1,2)
     operation = ""
     if randnum == 1:
         operation = "+"
     elif randnum == 2:
         operation = "-"
-    elif randnum == 3:
-        operation = "*"
-    else:
-        operation = "/"
     return operation
 
