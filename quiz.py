@@ -29,7 +29,7 @@ def Give_Quiz(difficulty):
         score_system = hard
     else:
         print("invalid difficulty restarting ...")
-        sleep(1)
+        sleep(2)
         print("invalid difficulty restarting .")
         if Restart_The_Quiz():
             return
@@ -46,16 +46,25 @@ def Give_Quiz(difficulty):
             for j in score_system:
                 if time_to_answer <= float(j[0]):
                     c_score = j[1]
+                    score += c_score # Accumulate score
                     break
             print(f"Correct! you answered in {time_to_answer:.0f} second(s) - ({c_score}) points awarded")
-            score += c_score  # Accumulate score
+              
             table.append([(i+1), True, time_to_answer])
         else:
             print(f"Incorrect! you answered in {time_to_answer:.0f} second(s) - no points awarded")
             table.append([(i+1), False, time_to_answer])
 
     print("Breakdown")
-    print("Question     Correct     Time")
+    print("Question     Correct    Time")
     for d in table:
-        print(f"{d[0]}          {d[1]}     {d[2]:.0f}s")
+        print(f"{d[0]}            {'yes' if d[1] else 'no '}        {d[2]:.0f}s")
     print(f"Total Score: {score}")
+
+    restart = input("Do you want to restart the quiz? (if yes press enter, if no type exit) ")
+    if restart.lower() != "exit":
+        if Restart_The_Quiz():
+            return
+    else:
+        print("Exiting the quiz. Goodbye!")
+        exit()
